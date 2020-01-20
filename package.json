@@ -1,0 +1,26 @@
+{
+  "name": "mern_diet_log",
+  "version": "1.0.0",
+  "description": "A diet calorie counter application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Mike Miltner",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "concurrently": "^5.0.2",
+    "config": "^3.2.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
